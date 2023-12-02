@@ -7,7 +7,7 @@ WORKDIR /app
 RUN git clone https://github.com/phachon/mm-wiki.git
 
 
-FROM golang:1.14.1-alpine
+FROM golang:1.20.11-alpine
 
 COPY --from=0 /app/mm-wiki /app/mm-wiki
 
